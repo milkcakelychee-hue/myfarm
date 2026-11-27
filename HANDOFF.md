@@ -23,7 +23,7 @@
 - **สเปก:** `stardew-app-SPEC.md` (รายละเอียดฟีเจอร์และหน้า)
 - **แผนฐานข้อมูล:** `stardew-db-PLAN.md`
 - **ฐานข้อมูล:** `stardew-db/` (schema_version 8, มีคอลัมน์ `content_pack` = 'sve' หรือ 'vanilla' ในตาราง item, npc, building)
-  - backup อยู่ที่ repo private github.com/milkcakelychee-hue/myfarm (แก้แล้ว commit + push ด้วย)
+  - backup อยู่ที่ repo public github.com/milkcakelychee-hue/myfarm (แก้แล้ว commit + push ด้วย)
   - `npm run sync-db` (ใน app) คัดลอก DB เข้า `app/public/data/stardew.sqlite` และย่อรูป
 - **แอป** `app/` ใช้ Vite 6 + Preact + TypeScript + vite-plugin-pwa (prompt mode + `src/update.ts` อัปเดตเอง)
   - route แบบ hash `#/<tab>/<sub>`, 5 แท็บ: วันนี้ · Wiki · My Farm · คำนวณ · เพิ่มเติม
