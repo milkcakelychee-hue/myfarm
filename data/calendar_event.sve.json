@@ -1,0 +1,22 @@
+[
+ {"id": "birthday_andy", "season": "Spring", "day_start": 23, "day_end": null, "kind": "birthday", "name_en": "Andy's Birthday", "npc_id": "andy", "notes": null},
+ {"id": "birthday_claire", "season": "Fall", "day_start": 8, "day_end": null, "kind": "birthday", "name_en": "Claire's Birthday", "npc_id": "claire", "notes": null},
+ {"id": "community_day_spring", "season": "Spring", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Community Day", "npc_id": null, "notes": "SVE festival, only after completing the Community Center; Community Day and Joja Day are alternative variants"},
+ {"id": "community_day_summer", "season": "Summer", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Community Day", "npc_id": null, "notes": "SVE festival, only after completing the Community Center; Community Day and Joja Day are alternative variants"},
+ {"id": "community_day_fall", "season": "Fall", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Community Day", "npc_id": null, "notes": "SVE festival, only after completing the Community Center; Community Day and Joja Day are alternative variants"},
+ {"id": "community_day_winter", "season": "Winter", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Community Day", "npc_id": null, "notes": "SVE festival, only after completing the Community Center; Community Day and Joja Day are alternative variants"},
+ {"id": "joja_day_spring", "season": "Spring", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Joja Day", "npc_id": null, "notes": "SVE festival, only after completing the Joja Community Development projects; Community Day and Joja Day are alternative variants"},
+ {"id": "joja_day_summer", "season": "Summer", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Joja Day", "npc_id": null, "notes": "SVE festival, only after completing the Joja Community Development projects; Community Day and Joja Day are alternative variants"},
+ {"id": "joja_day_fall", "season": "Fall", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Joja Day", "npc_id": null, "notes": "SVE festival, only after completing the Joja Community Development projects; Community Day and Joja Day are alternative variants"},
+ {"id": "joja_day_winter", "season": "Winter", "day_start": 22, "day_end": null, "kind": "festival", "name_en": "Joja Day", "npc_id": null, "notes": "SVE festival, only after completing the Joja Community Development projects; Community Day and Joja Day are alternative variants"},
+ {"id": "birthday_lance", "season": "Spring", "day_start": 8, "day_end": null, "kind": "birthday", "name_en": "Lance's Birthday", "npc_id": "lance", "notes": null},
+ {"id": "birthday_magnus", "season": "Winter", "day_start": 17, "day_end": null, "kind": "birthday", "name_en": "Magnus's Birthday", "npc_id": "magnus", "notes": null},
+ {"id": "birthday_martin", "season": "Summer", "day_start": 6, "day_end": null, "kind": "birthday", "name_en": "Martin's Birthday", "npc_id": "martin", "notes": null},
+ {"id": "birthday_morgan", "season": "Fall", "day_start": 7, "day_end": null, "kind": "birthday", "name_en": "Morgan's Birthday", "npc_id": "morgan", "notes": null},
+ {"id": "birthday_olivia", "season": "Spring", "day_start": 15, "day_end": null, "kind": "birthday", "name_en": "Olivia's Birthday", "npc_id": "olivia", "notes": null},
+ {"id": "birthday_scarlett", "season": "Summer", "day_start": 7, "day_end": null, "kind": "birthday", "name_en": "Scarlett's Birthday", "npc_id": "scarlett", "notes": null},
+ {"id": "birthday_sophia", "season": "Winter", "day_start": 27, "day_end": null, "kind": "birthday", "name_en": "Sophia's Birthday", "npc_id": "sophia", "notes": null},
+ {"id": "birthday_susan", "season": "Fall", "day_start": 28, "day_end": null, "kind": "birthday", "name_en": "Susan's Birthday", "npc_id": "susan", "notes": null},
+ {"id": "birthday_victor", "season": "Summer", "day_start": 23, "day_end": null, "kind": "birthday", "name_en": "Victor's Birthday", "npc_id": "victor", "notes": null},
+ {"id": "birthday_wiki_style_guide_npc", "season": "Fall", "day_start": 21, "day_end": null, "kind": "birthday", "name_en": "Wiki Style Guide/NPC's Birthday", "npc_id": "wiki_style_guide_npc", "notes": null}
+]

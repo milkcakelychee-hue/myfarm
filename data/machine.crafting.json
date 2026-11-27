@@ -1,0 +1,11 @@
+[
+ {"id": "keg", "name_en": "Keg", "name_th": null, "image_id": "img_keg", "notes": null},
+ {"id": "preserves_jar", "name_en": "Preserves Jar", "name_th": null, "image_id": "img_preserves_jar", "notes": null},
+ {"id": "cheese_press", "name_en": "Cheese Press", "name_th": null, "image_id": "img_cheese_press", "notes": null},
+ {"id": "mayonnaise_machine", "name_en": "Mayonnaise Machine", "name_th": null, "image_id": "img_mayonnaise_machine", "notes": null},
+ {"id": "loom", "name_en": "Loom", "name_th": null, "image_id": "img_loom", "notes": null},
+ {"id": "oil_maker", "name_en": "Oil Maker", "name_th": null, "image_id": "img_oil_maker", "notes": null},
+ {"id": "dehydrator", "name_en": "Dehydrator", "name_th": null, "image_id": "img_dehydrator", "notes": null},
+ {"id": "fish_smoker", "name_en": "Fish Smoker", "name_th": null, "image_id": "img_fish_smoker", "notes": null},
+ {"id": "bee_house", "name_en": "Bee House", "name_th": null, "image_id": "img_bee_house", "notes": null}
+]

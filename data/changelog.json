@@ -1,0 +1,52 @@
+[
+ {
+  "at": "2026-11-12",
+  "round": "0-pilot",
+  "summary": "Created schema; checked all 4 sources are reachable via Chrome; pilot rows for Pumpkin only (item, seed item, crop, season, image URL). No bulk data collected yet."
+ },
+ {
+  "at": "2026-11-14",
+  "round": "1-crops-10",
+  "summary": "Imported 10 crops + seeds from wiki_official via scripts/import_crops.py (Pumpkin, Parsnip, Melon, Cauliflower, Ancient Fruit, Cranberries, Blueberry, Strawberry, Sunflower, Fairy Rose): item, crop, crop_season, shop_price (Pierre/Joja), image (pending). All verified=false. fetch_wiki.py now uses curl transport."
+ },
+ {
+  "at": "2026-11-14",
+  "round": "schema-v2",
+  "summary": "Removed crop.giant_crop (owner decision: not used by the app). schema_version 1 -> 2."
+ },
+ {
+  "at": "2026-11-16",
+  "round": "2-full",
+  "summary": "schema_version 2 -> 3 (item_season, item_location, animal, monster). Full import of all app categories from wiki_official (2,002/2,004 pages; 'Special Charm' and 'Special Items & Powers' blocked by wiki firewall) + SVE from wiki_sve as content_pack='sve'. Owner exclusions via data/exclude.json: all Joja (items, JojaMart prices, Joja events/buildings) and SVE wiki style-guide pages. Images: 1,118 downloaded (wiki.gg uses flat /images/ paths). All verified=false."
+ },
+ {
+  "at": "2026-11-16",
+  "round": "2-full",
+  "summary": "schema_version 3 -> 4: game_constant table (sprinkler reach incl. Pressure Nozzle, Coop/Barn capacity per level, greenhouse plots) via scripts/import_constants.py, parsed from wiki text."
+ },
+ {
+  "at": "2026-11-17",
+  "round": "2-full",
+  "summary": "schema_version 4 -> 5: profession table (30 professions, all 5 skills, bonus_kind/bonus_value for price/growth multipliers) via scripts/import_skills.py; game_constant gains crop-quality formula coefficients, fertilizer levels and quality price multipliers; shop_price gains Basic/Quality Fertilizer at Pierre's. import_nature.py animal parser fixed (produce/deluxe items and produce_days)."
+ },
+ {
+  "at": "2026-11-21",
+  "round": "2-full",
+  "summary": "schema_version 5 -> 6: building gains size_w/size_h (Carpenter's Shop / Wizard's Tower size columns) and upgrade_from (Barn/Coop/Shed page 'Upgrades From' row); Wizard buildings build_days=0 ('require no build time'). npc gains home (villager infobox address). New table npc_schedule (regular + rain day per season) via scripts/import_schedules.py. image img_map_world (File:Map.png, in-game map from Player Menu page) via scripts/import_maps.py."
+ },
+ {
+  "at": "2026-11-21",
+  "round": "2-full",
+  "summary": "schema_version 6 -> 7: npc_schedule gains location_th/note_th filled by scripts/import_schedules.py from data/npc_schedule_th.json (owner's Thai glossary, 283 strings). game_constant gains gift_points_love/like/neutral/dislike/hate, gift_birthday_mult and friendship_points_per_heart parsed from the Friendship page (scripts/import_skills.py)."
+ },
+ {
+  "at": "2026-11-21",
+  "round": "2-full",
+  "summary": "Icons for every app icon slot via new scripts/import_icons.py (data/image.icons.json, 158 rows): img_map_sve (SVE Pelican Town map), img_building_*/img_npc_*/img_animal_* (building/npc/animal.image_id now set by the owning importers via wikitext.icon_ids()), quality/season/weather/skill/profession icons, img_greenhouse, img_ginger_island. Shipping Bin has no PNG in cache (gif only). No schema change."
+ },
+ {
+  "at": "2026-11-21",
+  "round": "2-full",
+  "summary": "schema_version 8: new tables location (SVE Locations page, category = page heading, sort = page order, img_loc_<slug> pictures) and location_alias (fish.locations spellings -> location.id), via new scripts/import_locations.py (data/{location,location_alias,image,entity_source}.locations.json). Extra rows Junimo Woods, Henchman's Backyard from their own pages. Pelican Town / Cindersap Forest / Secret Woods rows are content_pack vanilla."
+ }
+]

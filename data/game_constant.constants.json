@@ -1,0 +1,15 @@
+[
+ {"key": "sprinkler_tiles", "value": 4, "unit": "tiles", "note": "Sprinkler: tiles watered"},
+ {"key": "quality_sprinkler_tiles", "value": 8, "unit": "tiles", "note": "Quality Sprinkler: tiles watered"},
+ {"key": "iridium_sprinkler_tiles", "value": 24, "unit": "tiles", "note": "Iridium Sprinkler: tiles watered"},
+ {"key": "sprinkler_nozzle_tiles", "value": 8, "unit": "tiles", "note": "Sprinkler + Pressure Nozzle: 3x3 area minus the sprinkler tile"},
+ {"key": "quality_sprinkler_nozzle_tiles", "value": 24, "unit": "tiles", "note": "Quality Sprinkler + Pressure Nozzle: 5x5 area minus the sprinkler tile"},
+ {"key": "iridium_sprinkler_nozzle_tiles", "value": 48, "unit": "tiles", "note": "Iridium Sprinkler + Pressure Nozzle: 7x7 area minus the sprinkler tile"},
+ {"key": "coop_capacity", "value": 4, "unit": "animals", "note": "Coop: animals housed"},
+ {"key": "big_coop_capacity", "value": 8, "unit": "animals", "note": "Big Coop: animals housed"},
+ {"key": "deluxe_coop_capacity", "value": 12, "unit": "animals", "note": "Deluxe Coop: animals housed"},
+ {"key": "barn_capacity", "value": 4, "unit": "animals", "note": "Barn: animals housed"},
+ {"key": "big_barn_capacity", "value": 8, "unit": "animals", "note": "Big Barn: animals housed"},
+ {"key": "deluxe_barn_capacity", "value": 12, "unit": "animals", "note": "Deluxe Barn: animals housed"},
+ {"key": "greenhouse_plots", "value": 120, "unit": "tiles", "note": "Greenhouse soil tiles (occupied by sprinklers + left for plants)"}
+]

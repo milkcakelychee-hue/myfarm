@@ -1,0 +1,13 @@
+[
+ {"alias": "Adventurer's Summit", "location_id": "adventurer_summit"},
+ {"alias": "Highlands", "location_id": "the_highlands"},
+ {"alias": "Blue Moon Vineyard River", "location_id": "blue_moon_vineyard"},
+ {"alias": "Forest West (Summer)", "location_id": "forest_west"},
+ {"alias": "Highlands Cavern", "location_id": "crystal_cavern"},
+ {"alias": "Pelican Town River", "location_id": "pelican_town"},
+ {"alias": "Town River", "location_id": "pelican_town"},
+ {"alias": "Cindersap Forest (Pond)", "location_id": "cindersap_forest"},
+ {"alias": "Cindersap Forest Waterfalls", "location_id": "cindersap_forest"},
+ {"alias": "Forest Pond", "location_id": "cindersap_forest"},
+ {"alias": "Forest River", "location_id": "cindersap_forest"}
+]

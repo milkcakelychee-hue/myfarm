@@ -1,0 +1,9 @@
+[
+ {"id": "bully_rex", "name_en": "Bully Rex", "name_th": null, "hp": 13000, "damage": 135, "defense": 7, "speed": 2, "xp": 7, "locations": "[\"Highlands\"]", "drops": null, "image_id": null},
+ {"id": "corrupt_mummy", "name_en": "Corrupt Mummy", "name_th": null, "hp": 2000, "damage": 110, "defense": 0, "speed": 2, "xp": 20, "locations": "[\"Iridium Quarry\"]", "drops": null, "image_id": null},
+ {"id": "corrupt_serpent", "name_en": "Corrupt Serpent", "name_th": null, "hp": 2000, "damage": 75, "defense": 0, "speed": 2, "xp": 20, "locations": "[\"Crimson Badlands\"]", "drops": null, "image_id": null},
+ {"id": "corrupt_spirit", "name_en": "Corrupt Spirit", "name_th": null, "hp": 2000, "damage": 90, "defense": 3, "speed": 4, "xp": 20, "locations": "[\"Iridium Quarry\"]", "drops": null, "image_id": null},
+ {"id": "legendary_diamond_sand_scorpion", "name_en": "Legendary Diamond Sand Scorpion", "name_th": null, "hp": 12000, "damage": 100, "defense": 1, "speed": 6, "xp": 15, "locations": "[\"Crimson Badlands\"]", "drops": null, "image_id": null},
+ {"id": "sand_scorpion", "name_en": "Sand Scorpion", "name_th": null, "hp": 80, "damage": null, "defense": 1, "speed": null, "xp": null, "locations": "[\"Crimson Badlands\"]", "drops": null, "image_id": null},
+ {"id": "wiki_style_guide_monster", "name_en": "Wiki Style Guide/Monster", "name_th": null, "hp": 1, "damage": 8, "defense": 0, "speed": 2, "xp": 1, "locations": "[\"Crimson Badlands\"]", "drops": null, "image_id": null}
+]

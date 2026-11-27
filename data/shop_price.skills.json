@@ -1,0 +1,4 @@
+[
+ {"item_id": "basic_fertilizer", "shop": "Pierre's General Store", "price": 100, "currency": "g", "condition": ""},
+ {"item_id": "quality_fertilizer", "shop": "Pierre's General Store", "price": 150, "currency": "g", "condition": "Year 2+"}
+]
