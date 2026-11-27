@@ -9,7 +9,7 @@ from wikitext import ROOT, all_pages, infobox, infobox_type, clean, seasons_in, 
 ICONS = icon_ids()
 
 ITEMS = {i['id']: i for i in json.load(open(os.path.join(ROOT, 'data', 'item.items.json'), encoding='utf-8'))}
-IMAGES = {i['id'] for f in ('image.json', 'image.items.json')
+IMAGES = {i['id'] for f in ('image.json', 'image.items.json', 'image.monsters.json')
           for i in json.load(open(os.path.join(ROOT, 'data', f), encoding='utf-8'))}
 skipped = []
 

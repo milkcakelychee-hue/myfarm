@@ -58,5 +58,10 @@
   "at": "2026-11-27",
   "round": "2-full",
   "summary": "schema_version 10: new table npc_romance (marriage candidates, bachelor/bachelorette). 12 vanilla rows from wiki Marriage page rev 195328 via scripts/import_romance.py; 7 SVE rows set by the owner (source='owner') because the SVE wiki does not split them."
+ },
+ {
+  "at": "2026-11-27",
+  "round": "2-full",
+  "summary": "Monster icons: new scripts/import_monster_icons.py writes img_<monster> rows (first PNG in Infobox monster, else '<Title>.png' / '<Title> Dangerous.png'); import_nature.py now also reads image.monsters.json so monster.image_id is set; downloaded 57 of 65 (missing: Slimes and the SVE monsters). No schema change."
  }
 ]
