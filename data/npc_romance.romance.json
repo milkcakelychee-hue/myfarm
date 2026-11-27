@@ -1,0 +1,97 @@
+[
+ {
+  "npc_id": "alex",
+  "kind": "bachelor",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "elliott",
+  "kind": "bachelor",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "harvey",
+  "kind": "bachelor",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "sam",
+  "kind": "bachelor",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "sebastian",
+  "kind": "bachelor",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "shane",
+  "kind": "bachelor",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "abigail",
+  "kind": "bachelorette",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "emily",
+  "kind": "bachelorette",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "haley",
+  "kind": "bachelorette",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "leah",
+  "kind": "bachelorette",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "maru",
+  "kind": "bachelorette",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "penny",
+  "kind": "bachelorette",
+  "source": "wiki"
+ },
+ {
+  "npc_id": "claire",
+  "kind": "bachelorette",
+  "source": "owner"
+ },
+ {
+  "npc_id": "olivia",
+  "kind": "bachelorette",
+  "source": "owner"
+ },
+ {
+  "npc_id": "scarlett",
+  "kind": "bachelorette",
+  "source": "owner"
+ },
+ {
+  "npc_id": "sophia",
+  "kind": "bachelorette",
+  "source": "owner"
+ },
+ {
+  "npc_id": "lance",
+  "kind": "bachelor",
+  "source": "owner"
+ },
+ {
+  "npc_id": "magnus",
+  "kind": "bachelor",
+  "source": "owner"
+ },
+ {
+  "npc_id": "victor",
+  "kind": "bachelor",
+  "source": "owner"
+ }
+]

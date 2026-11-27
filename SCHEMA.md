@@ -31,3 +31,6 @@
 - `special_order`: Special Order บนบอร์ดในเมือง 18 รายการ จากหน้า wiki Quests (ชื่อ, `requester_npc_id`, เงื่อนไข, `days`, `repeatable`, `objective_en` ข้อความตามวิกิ)
 - `special_order_target`: ของที่ต้องส่ง/จับ/ล่า ต่อภารกิจ `kind` = item | monster | category, `one_of=1` คือเลือกอย่างใดอย่างหนึ่ง (แยกตาม `season` ถ้ามี)
 - ยังไม่มี Qi's Special Orders และของ SVE
+
+## npc_romance (schema v10)
+- ผู้ที่แต่งงานได้ แยก bachelor / bachelorette · เกมหลักจากหน้า wiki Marriage · SVE ตั้งโดยเจ้าของ (source = owner)

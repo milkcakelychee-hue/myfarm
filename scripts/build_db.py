@@ -8,7 +8,7 @@ import json, os, sqlite3, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORDER = ['meta','source','image','item','item_season','item_location','crop','crop_season','shop_price','fish','machine',
          'processing_rule','recipe','recipe_ingredient','bundle','bundle_item','npc','gift_taste','calendar_event','building',
-         'building_material','tool_upgrade','animal','monster','special_order','special_order_target','game_constant','profession','npc_schedule','location','location_alias','entity_source','changelog']
+         'building_material','tool_upgrade','animal','monster','special_order','special_order_target','npc_romance','game_constant','profession','npc_schedule','location','location_alias','entity_source','changelog']
 PK = {'game_constant':'key','profession':'id','item':'id','crop':'item_id','npc':'id','building':'id','machine':'id','recipe':'id','bundle':'id','image':'id','fish':'item_id','location':'id','special_order':'id'}
 
 def val(v):

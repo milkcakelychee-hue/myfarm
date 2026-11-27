@@ -136,6 +136,12 @@ CREATE TABLE building_material (
   building_id TEXT NOT NULL REFERENCES building(id), item_id TEXT NOT NULL REFERENCES item(id),
   qty INTEGER NOT NULL, PRIMARY KEY (building_id, item_id)
 );
+-- marriage candidates: bachelor / bachelorette (vanilla from wiki Marriage page; SVE set by owner, source='owner')
+CREATE TABLE npc_romance (
+  npc_id TEXT PRIMARY KEY REFERENCES npc(id),
+  kind TEXT NOT NULL CHECK (kind IN ('bachelor','bachelorette')),
+  source TEXT NOT NULL CHECK (source IN ('wiki','owner'))
+);
 CREATE TABLE tool_upgrade (
   tool TEXT NOT NULL, level TEXT NOT NULL, gold INTEGER NOT NULL,
   bar_item_id TEXT REFERENCES item(id), bar_qty INTEGER, PRIMARY KEY (tool, level)

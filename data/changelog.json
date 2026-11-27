@@ -53,5 +53,10 @@
   "at": "2026-11-27",
   "round": "2-full",
   "summary": "schema_version 9: new tables special_order (18 town-board Special Orders) and special_order_target (65 rows: items/monsters/categories to deliver, one_of + season for choose-one lists) from the wiki Quests page rev 195566, via new scripts/import_special_orders.py (data/{special_order,special_order_target,entity_source}.special_orders.json). Qi's orders and SVE orders not included."
+ },
+ {
+  "at": "2026-11-27",
+  "round": "2-full",
+  "summary": "schema_version 10: new table npc_romance (marriage candidates, bachelor/bachelorette). 12 vanilla rows from wiki Marriage page rev 195328 via scripts/import_romance.py; 7 SVE rows set by the owner (source='owner') because the SVE wiki does not split them."
  }
 ]
