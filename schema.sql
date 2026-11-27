@@ -141,6 +141,27 @@ CREATE TABLE tool_upgrade (
   bar_item_id TEXT REFERENCES item(id), bar_qty INTEGER, PRIMARY KEY (tool, level)
 );
 
+-- Special Orders (town board), from the wiki Quests page. Targets: one row per thing to deliver/catch/slay.
+CREATE TABLE special_order (
+  id TEXT PRIMARY KEY, name_en TEXT NOT NULL, name_th TEXT,
+  requester_npc_id TEXT REFERENCES npc(id),
+  board TEXT NOT NULL DEFAULT 'town' CHECK (board IN ('town','qi')),
+  prerequisite_en TEXT, days INTEGER, repeatable INTEGER NOT NULL DEFAULT 0,
+  objective_en TEXT,                                 -- requirement text as written on the wiki
+  content_pack TEXT NOT NULL DEFAULT 'vanilla' CHECK (content_pack IN ('vanilla','sve')),
+  sort INTEGER
+);
+CREATE TABLE special_order_target (
+  order_id TEXT NOT NULL REFERENCES special_order(id), seq INTEGER NOT NULL,
+  kind TEXT NOT NULL CHECK (kind IN ('item','monster','category')),
+  item_id TEXT REFERENCES item(id), monster_id TEXT REFERENCES monster(id),
+  label_en TEXT NOT NULL, qty INTEGER,
+  one_of INTEGER NOT NULL DEFAULT 0,                 -- 1 = choose one of the rows with one_of=1 (per season if season set)
+  season TEXT CHECK (season IN ('Spring','Summer','Fall','Winter')),
+  PRIMARY KEY (order_id, seq)
+);
+
+
 -- provenance: every fact-bearing row should have at least one entity_source row
 CREATE TABLE entity_source (
   entity_type TEXT NOT NULL,                       -- table name, e.g. item / crop / npc

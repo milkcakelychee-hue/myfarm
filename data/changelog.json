@@ -48,5 +48,10 @@
   "at": "2026-11-21",
   "round": "2-full",
   "summary": "schema_version 8: new tables location (SVE Locations page, category = page heading, sort = page order, img_loc_<slug> pictures) and location_alias (fish.locations spellings -> location.id), via new scripts/import_locations.py (data/{location,location_alias,image,entity_source}.locations.json). Extra rows Junimo Woods, Henchman's Backyard from their own pages. Pelican Town / Cindersap Forest / Secret Woods rows are content_pack vanilla."
+ },
+ {
+  "at": "2026-11-27",
+  "round": "2-full",
+  "summary": "schema_version 9: new tables special_order (18 town-board Special Orders) and special_order_target (65 rows: items/monsters/categories to deliver, one_of + season for choose-one lists) from the wiki Quests page rev 195566, via new scripts/import_special_orders.py (data/{special_order,special_order_target,entity_source}.special_orders.json). Qi's orders and SVE orders not included."
  }
 ]

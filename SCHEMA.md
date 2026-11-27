@@ -26,3 +26,8 @@
 - **`price_formula`:** เก็บเป็นข้อความ เช่น `price*2` ให้ตัวคำนวณในแอปตีความ จะกำหนดไวยากรณ์ตอนทำรอบแปรรูป
 - **คุณภาพ:** `normal|silver|gold|iridium` (ราคา/ตัวคูณจะเพิ่มเมื่อถึงรอบที่ต้องใช้)
 - **Pilot ปัจจุบัน:** `item` 2 แถว (pumpkin, pumpkin_seeds), `crop` 1, `crop_season` 1, `image` 1
+
+## special_order / special_order_target (schema v9)
+- `special_order`: Special Order บนบอร์ดในเมือง 18 รายการ จากหน้า wiki Quests (ชื่อ, `requester_npc_id`, เงื่อนไข, `days`, `repeatable`, `objective_en` ข้อความตามวิกิ)
+- `special_order_target`: ของที่ต้องส่ง/จับ/ล่า ต่อภารกิจ `kind` = item | monster | category, `one_of=1` คือเลือกอย่างใดอย่างหนึ่ง (แยกตาม `season` ถ้ามี)
+- ยังไม่มี Qi's Special Orders และของ SVE
