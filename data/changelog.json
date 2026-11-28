@@ -68,5 +68,10 @@
   "at": "2026-11-28",
   "round": "2-full",
   "summary": "Forage seasons/locations: wikitext.seasons_in now reads a plain 'All' (official + SVE infoboxes write it), so Cactus Fruit, Cave Carrot, Coconut, Ginger, Purple Mushroom, Seaweed, Conch, Shark Tooth get all 4 seasons; import_sve.py now writes item_location from the SVE item infobox 'Location' field (Conch, Four Leaf Clover, Mushroom Colony, Poison Mushroom, Rafflesia, Sand Dollar, Shark Tooth). No schema change."
+ },
+ {
+  "at": "2026-11-28",
+  "round": "2-full",
+  "summary": "exclude.json: drop Weeds Composite and Wild Grass Screenshot (wiki image pages imported as items), owner request."
  }
 ]

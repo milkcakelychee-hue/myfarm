@@ -2,12 +2,15 @@
  "_why": "Owner decision 2026-11-14: Blue never plays the Joja route. Remove everything Joja (JojaMart prices, Joja Day, Joja Emporium, Joja-named items) from the built database. Source JSON keeps the rows so this is reversible.",
  "item_name_like": [
   "%Joja%",
-  "Wiki Style Guide%"
+  "Wiki Style Guide%",
+  "Weeds Composite",
+  "Wild Grass Screenshot"
  ],
  "delete_where": {
   "shop_price": "shop LIKE '%Joja%'",
   "calendar_event": "name_en LIKE '%Joja%'",
   "building": "name_en LIKE '%Joja%'"
  },
- "_why_style_guide": "SVE wiki template example pages, not real items."
+ "_why_style_guide": "SVE wiki template example pages, not real items.",
+ "_why_junk_2026_11_28": "Owner asked to remove: wiki image/composite pages imported as items (Weeds Composite, Wild Grass Screenshot)."
 }
