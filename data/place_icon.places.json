@@ -1,0 +1,70 @@
+[
+ {
+  "name_en": "Copper Pan",
+  "image_id": "img_place_copper_pan"
+ },
+ {
+  "name_en": "Garbage Can",
+  "image_id": "img_place_garbage_can"
+ },
+ {
+  "name_en": "Frost Jelly",
+  "image_id": "img_place_frost_jelly"
+ },
+ {
+  "name_en": "Meteorite",
+  "image_id": "img_place_meteorite"
+ },
+ {
+  "name_en": "Mystery Box",
+  "image_id": "img_place_mystery_box"
+ },
+ {
+  "name_en": "Supply Crate",
+  "image_id": "img_place_supply_crate"
+ },
+ {
+  "name_en": "Statue Of Endless Fortune",
+  "image_id": "img_place_statue_of_endless_fortune"
+ },
+ {
+  "name_en": "Statue Of True Perfection",
+  "image_id": "img_place_statue_of_true_perfection"
+ },
+ {
+  "name_en": "Farm Cave",
+  "image_id": "img_place_farm_cave"
+ },
+ {
+  "name_en": "Trout Derby",
+  "image_id": "img_place_trout_derby"
+ },
+ {
+  "name_en": "Volcano Dungeon",
+  "image_id": "img_place_volcano_dungeon"
+ },
+ {
+  "name_en": "Fishing",
+  "image_id": "img_skill_fishing"
+ },
+ {
+  "name_en": "Foraging",
+  "image_id": "img_skill_foraging"
+ },
+ {
+  "name_en": "Mining",
+  "image_id": "img_skill_mining"
+ },
+ {
+  "name_en": "Tilling",
+  "image_id": "img_skill_farming"
+ },
+ {
+  "name_en": "Monster drop",
+  "image_id": "img_skill_combat"
+ },
+ {
+  "name_en": "Panning",
+  "image_id": "img_place_copper_pan"
+ }
+]

@@ -34,3 +34,6 @@
 
 ## npc_romance (schema v10)
 - ผู้ที่แต่งงานได้ แยก bachelor / bachelorette · เกมหลักจากหน้า wiki Marriage · SVE ตั้งโดยเจ้าของ (source = owner)
+
+## place_icon (schema v11)
+- รูปของชื่อแหล่งที่หาได้ที่ไม่ใช่ไอเท็ม/มอนสเตอร์/สถานที่ เช่น Garbage Can, Volcano Dungeon · กิจกรรม (Fishing ฯลฯ) ใช้ไอคอนทักษะ

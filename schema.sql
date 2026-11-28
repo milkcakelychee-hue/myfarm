@@ -142,6 +142,10 @@ CREATE TABLE npc_romance (
   kind TEXT NOT NULL CHECK (kind IN ('bachelor','bachelorette')),
   source TEXT NOT NULL CHECK (source IN ('wiki','owner'))
 );
+-- pictures for 'where to find' names that are not an item/monster/location row (Garbage Can, Volcano Dungeon, Fishing ...)
+CREATE TABLE place_icon (
+  name_en TEXT PRIMARY KEY, image_id TEXT NOT NULL REFERENCES image(id)
+);
 CREATE TABLE tool_upgrade (
   tool TEXT NOT NULL, level TEXT NOT NULL, gold INTEGER NOT NULL,
   bar_item_id TEXT REFERENCES item(id), bar_qty INTEGER, PRIMARY KEY (tool, level)
