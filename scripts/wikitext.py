@@ -84,7 +84,7 @@ def first_int(v):
 
 def seasons_in(v):
     v = v or ''
-    if re.search(r'All Seasons|All seasons|Any Season', v): return SEASONS[:]
+    if re.search(r'All Seasons|All seasons|Any Season', v) or re.fullmatch(r'\s*All\s*', v): return SEASONS[:]   # wiki infobox writes plain 'All' too
     return [s for s in SEASONS if s in v]
 
 

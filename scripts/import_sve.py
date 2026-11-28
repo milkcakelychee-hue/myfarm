@@ -82,7 +82,7 @@ def main():
     vitems = {r['id'] for r in json.load(open(os.path.join(ROOT, 'data', 'item.items.json'), encoding='utf-8'))}
     vnpcs = {r['id'] for r in json.load(open(os.path.join(ROOT, 'data', 'npc.people.json'), encoding='utf-8'))}
     pages = [json.load(open(f, encoding='utf-8')) for f in sorted(glob.glob(os.path.join(CACHE, '*.json')))]
-    R = {k: [] for k in ('item', 'image', 'item_season', 'crop', 'crop_season', 'shop_price', 'fish', 'monster', 'npc',
+    R = {k: [] for k in ('item', 'image', 'item_season', 'item_location', 'crop', 'crop_season', 'shop_price', 'fish', 'monster', 'npc',
                          'gift_taste', 'calendar_event', 'entity_source')}
     skipped = collections.defaultdict(list)
     parsed = [(pg,) + box_of(pg['wikitext']) for pg in pages]
@@ -119,6 +119,10 @@ def main():
             R['entity_source'] += [src('item', iid, pg), src('image', f'img_sve_{iid}', pg)]
             if box != 'Seeds Infobox':
                 R['item_season'] += [{'item_id': iid, 'season': s} for s in seasons_in(sve_clean(ib.get('Season')))]
+            if box not in ('Fish Infobox', 'Seeds Infobox'):          # forage etc.: Location field -> item_location
+                il = [sve_clean(x) for x in re.split(r'<br\s*/?>', ib.get('Location') or '') if sve_clean(x)]
+                R['item_location'] += [{'item_id': iid, 'location': l} for l in dict.fromkeys(il)]
+                if il: R['entity_source'].append(src('item_location', iid, pg))
             else:
                 c = sve_clean(ib.get('Crop'))
                 if c: seed_info[slug(c)] = (pg, iid, ib)
