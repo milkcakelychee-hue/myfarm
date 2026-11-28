@@ -78,5 +78,10 @@
   "at": "2026-11-28",
   "round": "2-full",
   "summary": "schema_version 11: new table place_icon (name_en -> image_id) for 'where to find' names with no item/monster/location row. scripts/import_place_icons.py: 11 wiki files downloaded as img_place_* (Copper Pan, Garbage Can, Frost Jelly, Meteorite, Mystery Box, Supply Crate, two statues, Farm Cave, Trout Derby, Volcano Dungeon) + activity names mapped to existing skill icons."
+ },
+ {
+  "at": "2026-11-28",
+  "round": "2-full",
+  "summary": "recipe.unlock keeps the skill level: '{{Name|Farming Skill Icon|...|Level 8}}' now imports as 'Farming Level 8' (was 'Farming Skill Icon'). import_crafting.py unlock_text(). No schema change."
  }
 ]

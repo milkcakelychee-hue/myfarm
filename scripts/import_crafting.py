@@ -27,6 +27,11 @@ CAT_LINKS = [(r'\[\[Fruits\|', 'Fruit'), (r'\[\[Vegetables\|', 'Vegetable'), (r'
              (r'\[\[Foraging[#|]', 'Forage'), (r'Any \[\[Fish\]\]', 'Fish')]
 
 
+def unlock_text(v):
+    """'{{Name|Farming Skill Icon|link=Farming|Level 8}}' -> 'Farming Level 8' (clean() would drop the level)."""
+    m = re.search(r'\{\{\s*Name\s*\|\s*(\w+) Skill Icon[^}]*?\|\s*Level\s*(\d+)\s*\}\}', v or '')
+    return f'{m.group(1)} Level {m.group(2)}' if m else clean(v)
+
 def known(iid, ctx):
     if iid in ITEMS: return True
     SKIPPED.append(f'{ctx}: {iid}'); return False
@@ -172,7 +177,7 @@ def recipes(R):
         if not out: SKIPPED.append(f'recipe {rid}: output item unknown (recipe kept, output_item_id NULL)')
         pm = re.match(r'\s*(\d+)\s', clean(ib.get('produces')) or '')
         R['recipe'].append({'id': rid, 'kind': kind, 'output_item_id': out, 'output_qty': int(pm.group(1)) if pm else 1,
-                            'unlock': clean(ib.get('recipe'))})
+                            'unlock': unlock_text(ib.get('recipe'))})
         R['entity_source'].append(src('recipe', rid, pg))
         for n, q in names_in(ib['ingredients']):
             iid = slug(n)
